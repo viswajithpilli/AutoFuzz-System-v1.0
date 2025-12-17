@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFuzz // Control Deck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoFuzz System v1.0</h1>
+        
+        <div class="input-group">
+            <input type="text" id="binaryPath" placeholder="ENTER TARGET BINARY PATH..." value="target\mock_target.bat">
+            <button id="fuzzBtn">INITIATE_FUZZ</button>
+        </div>
+
+        <div class="console" id="consoleOutput">
+            <div class="log">System Ready... Waiting for target override.</div>
+        </div>
+
+        <div class="status-panel">
+            <div class="stat-box">
+                <div class="stat-label">System Status</div>
+                <div class="stat-value safe" id="statusValue">SECURE</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">EIP Offset</div>
+                <div class="stat-value" id="offsetValue">---</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
